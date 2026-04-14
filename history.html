@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cebu City | History</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background: #00509e;
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('cebu-skyline.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        nav {
+            background: #333;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+            nav a {
+                color: white;
+                margin: 0 15px;
+                text-decoration: none;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+
+                nav a:hover {
+                    color: #ffcc00;
+                }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #00509e;
+            margin-bottom: 30px;
+        }
+
+        /* --- History Timeline Cards --- */
+        .history-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+
+        .history-card {
+            min-height: 350px;
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            align-items: center; /* Centers text box vertically for history */
+            justify-content: flex-start;
+            background-size: cover;
+            background-position: center;
+            background-color: #ccc;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+            padding-left: 5%;
+        }
+
+        /* Semi-Transparent Text Overlay (Wide Box) */
+        .history-overlay {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            width: 85%;
+            max-width: 600px;
+            padding: 30px;
+            border-left: 5px solid #ffcc00;
+            backdrop-filter: blur(5px);
+            border-radius: 0 10px 10px 0;
+        }
+
+            .history-overlay h3 {
+                margin: 0 0 10px 0;
+                color: #ffcc00;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            .history-overlay p {
+                margin: 0;
+                font-size: 1rem;
+                line-height: 1.6;
+                opacity: 0.9;
+            }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>History of Cebu</h1></header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="food.html">Cuisine</a>
+        <a href="transport.html">Transport</a>
+        <a href="culture.html">Culture</a>
+    </nav>
+
+    <div class="container">
+        <h2>The Journey through Centuries</h2>
+
+        <div class="history-grid">
+
+            <div class="history-card" style="background-image: url('pre-colonial.jpg');">
+                <div class="history-overlay">
+                    <h3>The Rajahnate of Sugbo</h3>
+                    <p>Long before the arrival of the West, Cebu (then known as Sugbo) was a prosperous trade hub founded by Sri Lumay. Merchants from China, Siam, and Arabia docked at our shores to trade silk, ceramics, and spices for local gold and wax.</p>
+                </div>
+            </div>
+
+            <div class="history-card" style="background-image: url('magellan-cross.jpg');">
+                <div class="history-overlay">
+                    <h3>1521: The Cross and the Sword</h3>
+                    <p>Ferdinand Magellan arrived in 1521, marking the start of Christianization. While Rajah Humabon and Hara Humamay were baptized, the era also saw the historic Battle of Mactan, where Datu Lapu-Lapu successfully defended the island against Spanish forces.</p>
+                </div>
+            </div>
+
+            <div class="history-card" style="background-image: url('colonial.jpg');">
+                <div class="history-overlay">
+                    <h3>1565: The First Spanish Settlement</h3>
+                    <p>Under Miguel López de Legazpi, Cebu became the first Spanish settlement and the capital of the East Indies. During this time, the Basilica Minore del Santo Niño and Fort San Pedro were established, forever shaping the city's architectural soul.</p>
+                </div>
+            </div>
+
+            <div class="history-card" style="background-image: url('american.jpg');">
+                <div class="history-overlay">
+                    <h3>War and Modernization</h3>
+                    <p>Following the Spanish-American War, Cebu underwent rapid urbanization. Despite the heavy destruction during World War II, the resilience of the Cebuanos led to a swift reconstruction that transformed the city into a major economic center.</p>
+                </div>
+            </div>
+
+            <div class="history-card" style="background-image: url('modern-cebu.jpg');">
+                <div class="history-overlay">
+                    <h3>The Queen City of the South</h3>
+                    <p>Today, Cebu City is a premier hub for IT, business process outsourcing, and tourism. In February 1937, it was officially inaugurated as a chartered city, cementing its place as the heart of the Visayas and a global gateway to the Philippines.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>&copy; 2026 Cebu Travel Guide</footer>
+</body>
+</html>

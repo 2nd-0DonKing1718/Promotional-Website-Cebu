@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cebu City | Culture</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background: #00509e;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('cebu-skyline.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        nav {
+            background: #333;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+            nav a {
+                color: white;
+                margin: 0 15px;
+                text-decoration: none;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+
+                nav a:hover {
+                    color: #ffcc00;
+                }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #00509e;
+            margin-bottom: 30px;
+        }
+
+        /* --- Culture Grid --- */
+        .culture-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .culture-card {
+            height: 280px;
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+            background-size: cover;
+            background-position: center;
+            background-color: #ccc;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+            .culture-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+            }
+
+        /* --- Semi-Transparent Overlay --- */
+        .overlay {
+            background: rgba(0, 0, 0, 0.75);
+            color: white;
+            width: 100%;
+            padding: 20px;
+            backdrop-filter: blur(3px);
+        }
+
+            .overlay h3 {
+                margin: 0 0 5px 0;
+                color: #ffcc00;
+                font-size: 1.2rem;
+            }
+
+            .overlay p {
+                margin: 0;
+                font-size: 0.9rem;
+                line-height: 1.4;
+            }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Cebuano Culture</h1>
+        <p>Faith, Festivity, and Heritage</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="food.html">Cuisine</a>
+        <a href="transport.html">Transport</a>
+        <a href="culture.html">Culture</a>
+    </nav>
+
+    <div class="container">
+        <h2>Festivals & Heritage</h2>
+
+        <div class="culture-grid">
+            <div class="culture-card" style="background-image: url('sinulog.jpg');">
+                <div class="overlay">
+                    <h3>Sinulog Festival</h3>
+                    <p>The grandest festival in the Philippines honoring the Señor Santo Niño with vibrant street dancing.</p>
+                </div>
+            </div>
+
+            <div class="culture-card" style="background-image: url('kadaugan.jpg');">
+                <div class="overlay">
+                    <h3>Kadaugan sa Mactan</h3>
+                    <p>A historical re-enactment of the Battle of Mactan, celebrating Datu Lapu-Lapu's victory.</p>
+                </div>
+            </div>
+
+            <div class="culture-card" style="background-image: url('charter-day.jpg');">
+                <div class="overlay">
+                    <h3>Cebu City Charter Day</h3>
+                    <p>Celebrating the city's foundation and administrative independence every February 24th.</p>
+                </div>
+            </div>
+
+            <div class="culture-card" style="background-image: url('pasko.jpg');">
+                <div class="overlay">
+                    <h3>Pasko sa Sugbo</h3>
+                    <p>A month-long celebration of Christmas with grand light displays and cultural evening shows.</p>
+                </div>
+            </div>
+
+            <div class="culture-card" style="background-image: url('kabanhawan.jpg');">
+                <div class="overlay">
+                    <h3>Kabanhawan Festival</h3>
+                    <p>The "Resurrection Festival" in Minglanilla featuring the joyful "Sugat" dance ritual.</p>
+                </div>
+            </div>
+
+            <div class="culture-card" style="background-image: url('tuba-fest.jpg');">
+                <div class="overlay">
+                    <h3>Tuba Festival</h3>
+                    <p>Honoring Borbon's coconut wine industry and the traditional craft of tuba making.</p>
+                </div>
+            </div>
+
+            <div class="culture-card" style="background-image: url('crafts.jpg');">
+                <div class="overlay">
+                    <h3>Handicrafts & Design</h3>
+                    <p>Cebu is the design capital, famous for world-class furniture and handmade guitars.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>&copy; 2026 Cebu Travel Guide</footer>
+
+</body>
+</html>

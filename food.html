@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cebu City | Cuisine</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background: #00509e;
+            background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('cebu-skyline.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        nav {
+            background: #333;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+            nav a {
+                color: white;
+                margin: 0 15px;
+                text-decoration: none;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+
+                nav a:hover {
+                    color: #ffcc00;
+                }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #00509e;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* --- Food Grid with Background Images --- */
+        .food-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .food-card {
+            height: 250px;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end; /* Puts text box at the bottom */
+            background-size: cover;
+            background-position: center;
+            background-color: #ddd; /* Fallback color */
+            transition: transform 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+            .food-card:hover {
+                transform: scale(1.03);
+            }
+
+        /* --- Semi-Transparent Text Box --- */
+        .text-box {
+            background: rgba(0, 0, 0, 0.7); /* Black with 70% transparency */
+            color: white;
+            width: 100%;
+            padding: 15px;
+            backdrop-filter: blur(3px); /* Optional: slight blur effect */
+        }
+
+            .text-box h3 {
+                margin: 0 0 5px 0;
+                color: #ffcc00; /* Gold titles look great on dark backgrounds */
+                font-size: 1.2rem;
+            }
+
+            .text-box p {
+                margin: 0;
+                font-size: 0.9rem;
+                line-height: 1.4;
+            }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Cebuano Food</h1></header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="food.html">Cuisine</a>
+        <a href="transport.html">Transport</a>
+        <a href="culture.html">Culture</a>
+    </nav>
+
+    <div class="container">
+        <h2>Local Delicacies & Specialties</h2>
+
+        <div class="food-grid">
+            <div class="food-card" style="background-image: url('lechon.jpg');">
+                <div class="text-box">
+                    <h3>Lechon Cebu</h3>
+                    <p>The gold standard of roasted pig. Crunchy skin and juicy, flavored meat.</p>
+                </div>
+            </div>
+
+            <div class="food-card" style="background-image: url('sutukil.jpg');">
+                <div class="text-box">
+                    <h3>Sutukil</h3>
+                    <p>Sugba (Grilled), Tuwa (Stewed), and Kilaw (Raw in vinegar).</p>
+                </div>
+            </div>
+
+            <div class="food-card" style="background-image: url('ngohiong.jpg');">
+                <div class="text-box">
+                    <h3>Ngohiong</h3>
+                    <p>Deep-fried vegetable rolls with five-spice powder.</p>
+                </div>
+            </div>
+
+            <div class="food-card" style="background-image: url('larang.jpg');">
+                <div class="text-box">
+                    <h3>Larang Soup</h3>
+                    <p>Spicy and sour seafood stew, a local favorite.</p>
+                </div>
+            </div>
+
+            <div class="food-card" style="background-image: url('pochero.jpg');">
+                <div class="text-box">
+                    <h3>Pochero</h3>
+                    <p>Rich beef marrow soup with corn and vegetables.</p>
+                </div>
+            </div>
+
+            <div class="food-card" style="background-image: url('humba.jpg');">
+                <div class="text-box">
+                    <h3>Humba</h3>
+                    <p>Sweet and savory braised pork belly with black beans.</p>
+                </div>
+            </div>
+
+            <div class="food-card" style="background-image: url('kinilaw.jpg');">
+                <div class="text-box">
+                    <h3>Bakasi Kinilaw</h3>
+                    <p>Fresh eel marinated in vinegar and local spices.</p>
+                </div>
+            </div>
+
+            <div class="food-card" style="background-image: url('bibingka.jpg');">
+                <div class="text-box">
+                    <h3>Bibingka Mandaue</h3>
+                    <p>Sticky rice cakes made with coconut sap (tuba).</p>
+                </div>
+            </div>
+
+            <div class="food-card" style="background-image: url('torta.jpg');">
+                <div class="text-box">
+                    <h3>Torta Cebuana</h3>
+                    <p>Rich, lard-based cupcakes flavored with anise.</p>
+                </div>
+            </div>
+
+            <div class="food-card" style="background-image: url('otap.jpg');">
+                <div class="text-box">
+                    <h3>Otap</h3>
+                    <p>Flaky, brittle puff pastry sprinkled with sugar.</p>
+                </div>
+            </div>
+
+            <div class="food-card" style="background-image: url('hopia.jpg');">
+                <div class="text-box">
+                    <h3>Hopia</h3>
+                    <p>Traditional bean-filled mooncakes.</p>
+                </div>
+            </div>
+
+            <div class="food-card" style="background-image: url('puso.jpg');">
+                <div class="text-box">
+                    <h3>Puso</h3>
+                    <p>Hanging rice wrapped in coconut leaves.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>&copy; 2026 Cebu Travel Guide</footer>
+</body>
+</html>

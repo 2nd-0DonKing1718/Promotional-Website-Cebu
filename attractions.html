@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cebu City | Attractions</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background: #00509e;
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('cebu-skyline.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        nav {
+            background: #333;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+            nav a {
+                color: white;
+                margin: 0 15px;
+                text-decoration: none;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+
+                nav a:hover {
+                    color: #ffcc00;
+                }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #00509e;
+            margin-bottom: 30px;
+        }
+
+        /* --- Attractions Grid --- */
+        .attractions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            height: 300px; /* Taller than food cards to show more landscape */
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+            background-size: cover;
+            background-position: center;
+            background-color: #ccc;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+            .card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            }
+
+        /* --- Semi-Transparent Text Overlay --- */
+        .overlay {
+            background: rgba(0, 0, 0, 0.75);
+            color: white;
+            width: 100%;
+            padding: 20px;
+            backdrop-filter: blur(4px);
+        }
+
+            .overlay h3 {
+                margin: 0 0 8px 0;
+                color: #ffcc00;
+                font-size: 1.3rem;
+            }
+
+            .overlay p {
+                margin: 0;
+                font-size: 0.9rem;
+                opacity: 0.9;
+            }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Top Attractions</h1></header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="food.html">Cuisine</a>
+        <a href="transport.html">Transport</a>
+        <a href="culture.html">Culture</a>
+    </nav>
+
+    <div class="container">
+        <h2>Explore Cebu's Wonders</h2>
+
+        <div class="attractions-grid">
+            <div class="card" style="background-image: url('magellan.jpg');">
+                <div class="overlay">
+                    <h3>Magellan's Cross</h3>
+                    <p>A historical landmark marking the arrival of Christianity in the Philippines.</p>
+                </div>
+            </div>
+
+            <div class="card" style="background-image: url('simala.jpg');">
+                <div class="overlay">
+                    <h3>Simala Church</h3>
+                    <p>A castle-like monastery known for its miraculous reputation and grand architecture.</p>
+                </div>
+            </div>
+
+            <div class="card" style="background-image: url('oslob.jpg');">
+                <div class="overlay">
+                    <h3>Oslob</h3>
+                    <p>Famous worldwide for whale shark watching and the beautiful Tumalog Falls.</p>
+                </div>
+            </div>
+
+            <div class="card" style="background-image: url('kawasan.jpg');">
+                <div class="overlay">
+                    <h3>Kawasan Falls</h3>
+                    <p>Stunning multi-layered waterfalls famous for turquoise water and canyoneering.</p>
+                </div>
+            </div>
+
+            <div class="card" style="background-image: url('osmena.jpg');">
+                <div class="overlay">
+                    <h3>Osmeña Peak</h3>
+                    <p>The highest point in Cebu, offering a panoramic view of jagged green hills.</p>
+                </div>
+            </div>
+
+            <div class="card" style="background-image: url('malapascua.jpg');">
+                <div class="overlay">
+                    <h3>Malapascua Island</h3>
+                    <p>A world-class diving destination known for thresher shark sightings.</p>
+                </div>
+            </div>
+
+            <div class="card" style="background-image: url('fort.jpg');">
+                <div class="overlay">
+                    <h3>Fort San Pedro</h3>
+                    <p>The oldest military defense structure in the country, built by the Spanish.</p>
+                </div>
+            </div>
+
+            <div class="card" style="background-image: url('bantayan.jpg');">
+                <div class="overlay">
+                    <h3>Bantayan Island</h3>
+                    <p>Known for its crystal clear waters, white sand beaches, and peaceful atmosphere.</p>
+                </div>
+            </div>
+
+            <div class="card" style="background-image: url('moalboal.jpg');">
+                <div class="overlay">
+                    <h3>Moalboal</h3>
+                    <p>A paradise for snorkelers featuring the famous "Sardine Run" and sea turtles.</p>
+                </div>
+            </div>
+
+            <div class="card" style="background-image: url('mactan.jpg');">
+                <div class="overlay">
+                    <h3>Mactan Island</h3>
+                    <p>Home to luxury resorts, the Mactan Shrine, and vibrant marine sanctuaries.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>&copy; 2026 Cebu Travel Guide</footer>
+</body>
+</html>

@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cebu City | Transport</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background: #00509e;
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('cebu-skyline.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        nav {
+            background: #333;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+            nav a {
+                color: white;
+                margin: 0 15px;
+                text-decoration: none;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+
+                nav a:hover {
+                    color: #ffcc00;
+                }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #00509e;
+            margin-bottom: 30px;
+        }
+
+        /* --- Transport Grid --- */
+        .transport-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .transport-card {
+            height: 250px;
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+            background-size: cover;
+            background-position: center;
+            background-color: #ccc;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+            .transport-card:hover {
+                transform: scale(1.02);
+            }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.75);
+            color: white;
+            width: 100%;
+            padding: 15px;
+            backdrop-filter: blur(3px);
+        }
+
+            .overlay h3 {
+                margin: 0 0 5px 0;
+                color: #ffcc00;
+                font-size: 1.2rem;
+            }
+
+            .overlay p {
+                margin: 0;
+                font-size: 0.9rem;
+            }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Transport & Travel</h1></header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="food.html">Cuisine</a>
+        <a href="transport.html">Transport</a>
+        <a href="culture.html">Culture</a>
+    </nav>
+
+    <div class="container">
+        <h2>Getting Around the Queen City</h2>
+
+        <div class="transport-grid">
+            <div class="transport-card" style="background-image: url('jeepney.jpg');">
+                <div class="overlay">
+                    <h3>Jeepneys</h3>
+                    <p>The cultural icon of PH transport. Best for short distances and experiencing local life.</p>
+                </div>
+            </div>
+
+            <div class="transport-card" style="background-image: url('grab-taxi.jpg');">
+                <div class="overlay">
+                    <h3>Taxi & Ride-Hailing</h3>
+                    <p>Use Grab or local white taxis for air-conditioned comfort and direct point-to-point travel.</p>
+                </div>
+            </div>
+
+            <div class="transport-card" style="background-image: url('bus.jpg');">
+                <div class="overlay">
+                    <h3>MyBus & Ceres</h3>
+                    <p>Modern buses connecting the airport to major malls and northern/southern provinces.</p>
+                </div>
+            </div>
+
+            <div class="transport-card" style="background-image: url('ferry.jpg');">
+                <div class="overlay">
+                    <h3>FastCraft & Ferries</h3>
+                    <p>Convenient sea travel from Pier 1 to nearby islands like Bohol or Camotes.</p>
+                </div>
+            </div>
+
+            <div class="transport-card" style="background-image: url('habal-habal.jpg');">
+                <div class="overlay">
+                    <h3>Habal-Habal</h3>
+                    <p>Motorcycle taxis perfect for reaching mountain attractions like Sirao or Tops.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>&copy; 2026 Cebu Travel Guide</footer>
+</body>
+</html>
